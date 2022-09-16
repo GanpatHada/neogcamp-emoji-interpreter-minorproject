@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
+  
 }
 body::-webkit-scrollbar{
   display: none;
@@ -31,11 +32,10 @@ header{
   justify-content: center;
   
 }
-
-
 main{
   min-height: calc(100vh - 173px);
   width: 100%;
+  
 }
 #search{
   height:60px ;
@@ -70,8 +70,9 @@ input{
   border-radius: 5px;
   display: flex;
   padding: 0px;
-  justify-content: center;
+  justify-content: start;
   margin: 30px auto;
+  flex-wrap: wrap;
   
 }
 main p{
@@ -79,6 +80,9 @@ main p{
   font-size: 1.5rem;
   margin-bottom: 40px;
   color: grey;
+}
+footer p{
+  margin: 0px 20px;
 }
 .emojies{
   background-color: whitesmoke;
@@ -121,10 +125,17 @@ i{
 {
   #search{
     width: 80vw;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  input{
+    font-size: 16px;
   }
   #choosebox{
     width: 90vw;
-    flex-wrap: wrap;
+    
   }
 }
 
