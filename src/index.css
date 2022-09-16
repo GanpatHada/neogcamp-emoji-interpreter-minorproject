@@ -1,13 +1,130 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
 }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+header{
+  height: 80px;
+  width: 100%;
+  font-family: cursive;
+  background-color:rgb(255, 230, 2);
+  color:#3a3a3a;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  justify-content: center;
+  
+}
+
+
+main{
+  min-height: calc(100vh - 173px);
+  width: 100%;
+}
+#search{
+  height:60px ;
+  width: 750px ;
+  display: flex;
+  border-radius:30px;
+  background-color:rgb(230, 228, 228); 
+  margin: auto;
+  margin: 80px auto;
+  overflow: hidden;
+  transition: 0.2s ease-in;
+  position: relative;
+  margin-bottom: 40px;
+}
+input{
+  display: block;
+  width: 100%;
+  height: 60px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 0px 30px;
+  padding-right: 30px; 
+  caret-color:black
+  
+}
+#choosebox{
+  width: 810px;
+  min-height: fit-content;
+  background-color: rgb(230, 228, 228);
+  border-radius: 5px;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  margin: 30px auto;
+  
+}
+main p{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: grey;
+}
+.emojies{
+  background-color: whitesmoke;
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.emojies:hover{
+  border: 2px solid grey;
+}
+#search:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#search:hover > input{
+  background-color: rgb(230, 228, 228);
+}
+footer{
+  background-color: rgb(255, 230, 2);
+  padding: 15px 0px;
+  text-align: center;
+  color:#3a3a3a;
+  width: 100%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;   
+  flex-direction: column; 
+  justify-content: center;
+}
+i{
+  color:#3a3a3a;
+  font-size: 24px;
+  margin: 10px 5px;
+}
+@media(max-width:1000px)
+{
+  #search{
+    width: 80vw;
+  }
+  #choosebox{
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+}
+
