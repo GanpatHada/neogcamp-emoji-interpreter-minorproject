@@ -1,4 +1,4 @@
-# YODA TRANSLATOR
+# Emoji Interpreter
 
 It is the web app which tells us about the meaning of emoji , if it is present in our database
 
